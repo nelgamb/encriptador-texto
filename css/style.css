@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4fc;
+  font-family: "Inter", sans-serif;
+}
+
+/* Desing Dark */
+body.darkTheme {
+  font-family: "Inter", sans-serif;
+  background: #202123;
+  color: #fff;
+
+  .logoAlura {
+    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 1));
+  }
+
+  .cajaTexto {
+    background: #202123;
+    color: #fff;
+    font-size: 32px;
+    line-height: 48px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+  }
+
+  .encrip-text-section {
+    background: #202123;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 24px 32px -8px rgba(255, 255, 255, 0.5);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.logoAlura {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+#darkMode:checked {
+  background-color: green;
+  border-color: white;
+}
+
+#darkMode:not(:checked) {
+  border-color: black;
+}
+
+.main-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.normal-text-container {
+  width: 100%;
+  height: 400px;
+  padding-left: 100px;
+}
+
+.cajaTexto {
+  width: 80%;
+  height: 100%;
+  resize: none;
+  padding: 20px;
+  color: #0a3871;
+  background: #f4f4fc;
+  font-size: 32px;
+  line-height: 48px;
+  border: none;
+}
+
+.alerta {
+  padding-left: 180px;
+  margin-top: 4px;
+}
+
+.encrip-text-section {
+  display: block;
+  margin-left: 60px;
+  height: 526px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-encriptar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #0a3871;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-desencriptar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #0a3871;
+  cursor: pointer;
+}
+
+.btn-copiar {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  color: #0a3871;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  border: 1px solid #0a3871;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn-copiar:hover {
+  border: 1px solid #0a3871;
+}
+
+.encrip-text-section {
+  background: #fff;
+  border-radius: 20px;
+  width: 400px;
+  text-align: center;
+  color: #0a3871;
+}
+
+.required {
+  border: 5px solid red;
+}
+
+.required:focus {
+  border: 4px solid red !important;
+}
+
+.ocultar {
+  display: none;
+}
+
+.result-text {
+  font-size: 24px;
+}
+
+.copy-container {
+  display: flex;
+  position: absolute;
+  bottom: 400px;
+  top: 517px;
+  padding-left: 40px;
+}

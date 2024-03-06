@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Encriptador de Texto</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logoContainer">
+        <img src="img/logo.svg" alt="Logo de Alura Latam" class="logoAlura" id="logoAlura" />
+      </div>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="darkMode"
+        />
+        <label class="form-check-label" for="darkMode">Dark Theme</label>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="normal-text-section">
+        <div class="normal-text-container">
+          <textarea
+            class="cajaTexto"
+            placeholder="Ingrese el texto aqui"
+            id="cajaTexto"
+          ></textarea>
+        </div>
+
+        <div class="alerta">
+          <p> <img src="img/alerta.svg" alt="Imagen de meneco" /> Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <div class="botones-container">
+          <button
+            type="button"
+            class="btn btn-outline-primary btn-lg btn-main-funtionality btn-encriptar"
+            id="btn-encriptar"
+          >
+            Encriptar
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg btn-main-funtionality btn-desencriptar"
+            id="btn-desencriptar"
+          >
+            Desencriptar
+          </button>
+        </div>
+      </section>
+
+      <section class="encrip-text-section">
+        <div class="meneco-container" id="meneco-container">
+          <img src="img/meneco.svg" alt="Imagen de meneco" />
+        </div>
+        <div class="encrip-text-container" id="encrip-text-container">
+          <h3>
+            Ningún mensaje fue <br />
+            encontrado
+          </h3>
+          <p>
+            Ingresa el texto que desees encriptar o <br />
+            desencriptar
+          </p>
+        </div>
+        <div class="result-container">
+          <p class="result-text" id="result-text"></p>
+        </div>
+        <div class="copy-container">
+          <button type="button" id="btn-copiar" class="btn btn-outline-light btn-lg btn-main-funtionality btn-copiar">Copiar</button>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
